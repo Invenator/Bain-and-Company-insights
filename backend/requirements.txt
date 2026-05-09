@@ -9,3 +9,5 @@ openai
 groq
 tenacity
 cachetools
+pytest
+pytest-asyncio
