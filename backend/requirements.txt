@@ -1,0 +1,14 @@
+fastapi
+uvicorn[standard]
+httpx
+pydantic-settings
+python-dotenv
+google-genai
+google-generativeai
+openai
+groq
+tenacity
+cachetools
+pytest
+pytest-asyncio
+ruff
