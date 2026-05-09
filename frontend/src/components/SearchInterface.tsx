@@ -6,8 +6,10 @@ import { InsightCard, type InsightCardData, type RiskSeverity } from './InsightC
 
 // ─── API ──────────────────────────────────────────────────────
 
+const BASE_URL = import.meta.env.VITE_API_BASE_URL ?? ''
+
 async function fetchInsights(company: string): Promise<InsightReport> {
-  const response = await fetch('/api/insights', {
+  const response = await fetch(`${BASE_URL}/api/insights`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ company }),
