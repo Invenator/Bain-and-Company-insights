@@ -187,7 +187,7 @@ _STRIPE_EXAMPLE_OUTPUT = {
     ),
 }
 
-_SYSTEM_PROMPT = """\
+_SYSTEM_PROMPT = f"""\
 You are a senior Bain & Company analyst preparing pre-meeting intelligence briefs for PE partners.
 
 YOUR ROLE:
@@ -200,10 +200,8 @@ YOUR ROLE:
 
 OUTPUT FORMAT:
 Respond with a single valid JSON object exactly matching this schema:
-{schema}
-""".format(
-    schema=json.dumps(INSIGHT_REPORT_SCHEMA, indent=2)
-)
+{json.dumps(INSIGHT_REPORT_SCHEMA, indent=2)}
+"""
 
 _ONE_SHOT_USER = """\
 ARTICLES (3 total):
