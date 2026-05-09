@@ -1,3 +1,5 @@
+from typing import Literal
+
 from pydantic import BaseModel
 
 
@@ -9,7 +11,7 @@ class StrategicTheme(BaseModel):
 
 class RiskFlag(BaseModel):
     category: str
-    severity: str
+    severity: Literal["High", "Medium", "Low"]
     rationale: str
     sources: list[int]
 
