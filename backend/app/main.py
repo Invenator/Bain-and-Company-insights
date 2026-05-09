@@ -22,7 +22,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(title="Bain Company Intelligence Tool", lifespan=lifespan)
 
 ALLOWED_ORIGINS = [
-    "https://bain-and-company-insights-a2p8y5yzt.vercel.app",
+    "https://bain-and-company-insights.vercel.app",
     "http://localhost:5173",
 ]
 
