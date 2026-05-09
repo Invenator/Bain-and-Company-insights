@@ -21,11 +21,16 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(title="Bain Company Intelligence Tool", lifespan=lifespan)
 
+ALLOWED_ORIGINS = [
+    "https://bain-and-company-insights-lz3bju2an.vercel.app",
+    "http://localhost:5173",
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_origins=ALLOWED_ORIGINS,
+    allow_methods=["GET", "POST"],
+    allow_headers=["Content-Type"],
 )
 
 
