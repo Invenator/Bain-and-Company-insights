@@ -219,3 +219,5 @@ __marimo__/
 .claude/
 backend/.env
 backend/venv/
+claude-code-work-sessions.md
+v0-ui-work-session.md
