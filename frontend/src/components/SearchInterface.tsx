@@ -147,7 +147,7 @@ export function SearchInterface() {
             className="text-2xl font-semibold tracking-tight text-balance mb-2"
             style={{ color: 'var(--foreground)' }}
           >
-            Company Intelligence Search
+            Intelligence Search
           </h1>
           <p className="text-sm leading-relaxed" style={{ color: 'var(--muted-foreground)' }}>
             Generate an on-demand briefing for any company.
